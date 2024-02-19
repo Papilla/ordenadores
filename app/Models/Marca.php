@@ -12,13 +12,13 @@ use Illuminate\Database\Eloquent\Model;
  * @property $created_at
  * @property $updated_at
  *
- * @property Ordenadore[] $ordenadores
+ * @property Ordenador[] $ordenadores
  * @package App
  * @mixin \Illuminate\Database\Eloquent\Builder
  */
 class Marca extends Model
 {
-    
+
     static $rules = [
 		'nombre' => 'required',
     ];
@@ -40,6 +40,6 @@ class Marca extends Model
     {
         return $this->hasMany('App\Models\Ordenadore', 'marcas_id', 'id');
     }
-    
+
 
 }
