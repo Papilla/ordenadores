@@ -1,7 +1,7 @@
 <div class="box box-info padding-1">
     <div class="box-body">
 
-        <div class="form-group">
+        <div class="form-group"> 
             {{ Form::label('marcas_id') }}
             {{ Form::select('marcas_id', $marcas, $ordenador->marcas_id, ['class' => 'form-control' . ($errors->has('marcas_id') ? ' is-invalid' : '')]) }}
             {!! $errors->first('marcas_id', '<div class="invalid-feedback">:message</div>') !!}
